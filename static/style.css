@@ -1,0 +1,196 @@
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif; /* Modern sans-serif font */
+    background-color: #FFB6C1; /* Very light gray-blue background */
+    color: #2D3436; /* Dark gray text for contrast */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #0984e3; /* Bright blue for header */
+    font-size: 3rem;
+    margin-top: 40px;
+    font-weight: 800;
+}
+
+/* Container for Content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add Student Button */
+.add-student-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.add-student-container a {
+    background-color: #00B894; /* Modern teal for the button */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.add-student-container a:hover {
+    background-color: #00B2A9; /* Slightly darker teal */
+    transform: scale(1.05);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #E1E8F0;
+}
+
+table th {
+    background-color: #f0f4f8; /* Light gray-blue for header background */
+    color: #34495e;
+    font-weight: 700;
+}
+
+table tr:nth-child(even) {
+    background-color: #f7f9fb;
+}
+
+table tr:hover {
+    background-color: #E8F7FF; /* Light blue highlight on hover */
+}
+
+/* Actions Column */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.actions a {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Edit Button */
+.actions .edit {
+    background-color: #0984e3; /* Blue for Edit */
+}
+
+.actions .edit:hover {
+    background-color: #0077c8; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+.actions .delete {
+    background-color: #d63031; /* Red for Delete */
+}
+
+.actions .delete:hover {
+    background-color: #e74c3c; /* Darker red on hover */
+    transform: scale(1.05);
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input, 
+.form-container select, 
+.form-container button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #BDC3C7;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-container input:focus, 
+.form-container select:focus {
+    border-color: #0984e3; /* Blue highlight on focus */
+    outline: none;
+}
+
+.form-container button {
+    background-color: #00B894; /* Teal for button */
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.form-container button:hover {
+    background-color: #00A88F;
+    transform: scale(1.05);
+}
+
+/* Back to Home Link */
+.back-link {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #0984e3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: #0077c8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    table th, table td {
+        padding: 12px;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
